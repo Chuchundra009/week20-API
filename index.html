@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Кого или что будем искать?</h2>
+            <div>
+                <select name="topic" id="topicText" class="topic-text">
+                    <option value="people">Людей</option>
+                    <option value="planets">Планеты</option>
+                    <option value="vehicles">Транспортные средства</option>
+                </select>
+
+                <input type="number" id="inputNum" class="input-num" min="1" max="10" placeholder="введите число">
+
+                <button id="btn" class="btn-text">Вперед!</button>
+            </div>
+        </div>
+        <div>
+            <p id="resReq" class="res-req"></p>
+            <p id="errReq" class="err-req"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
